@@ -28,7 +28,7 @@ def student_list():
 			return jsonify({"error": "User already registered!"}), 400
 
 		student = {}
-		student['roll_no'] = int(roll_no)
+		student['roll_no'] = (roll_no)
 		student['name'] = request.form.get("name")
 		student['age'] = request.form.get("age")
 		student['branch'] = request.form.get("branch")
